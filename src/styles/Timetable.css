@@ -1,0 +1,63 @@
+.timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: color 0.5s;
+}
+
+.timetable-item {
+  width: 100%;
+  margin: 20px;
+}
+
+.timetable-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timetable-matchup {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.timetable-matchup p {
+  display: flex;
+  flex: 5;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timetable-matchup p.timetable-score {
+  flex: 0.5;
+}
+
+.timetable-item-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.first-team span {
+  margin-left: auto;
+}
+
+.last-team span {
+  margin-right: auto;
+}
+
+.second-team {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-matchup {
+    font-size: 0.8rem;
+  }
+}

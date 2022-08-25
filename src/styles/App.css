@@ -1,0 +1,60 @@
+:root {
+  --background: #f8f8ff;
+  --secondary-background: #D3D3D3;
+  --lighter-background: #034694;
+  --article-background: #fff;
+  --text-primary: #000;
+  --text-secondary: #808080;
+  --white-text-primary: #ffffff;
+  --hover: #ddd;
+  --border: #d3d3d3;
+  --form-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --background: #252526;
+  --secondary-background: #1e1e1e;
+  --lighter-background: #424242;
+  --article-background: #2d2d30;
+  --text-primary: rgba(255,255,255, 0.85);
+  --text-secondary: rgba(255,255,255, 0.6);
+  --white-text-primary: rgba(255,255,255, 0.85);
+  --hover: #3e3e42;
+  --accent: #8e05c2;
+  --border: #808080;
+  --form-bg: #191919;
+}
+
+.site-wrapper {
+  background-color: var(--secondary-background);
+  transition: all .5s;
+}
+
+.app {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1230px;
+  margin: 0 auto;
+  transition: background-color .5s;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding: 30px 0;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.results {
+  min-width: 240px;
+}
+
+.page {
+  flex-grow: 1;
+}

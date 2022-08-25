@@ -1,0 +1,21 @@
+.social-media-links-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--article-background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+.social-media-links-container a {
+        text-decoration: none;
+        color: var(--text-primary);
+        transition: color 0.5s;
+}

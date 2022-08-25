@@ -1,0 +1,60 @@
+.workout-info-container {
+  color: var(--text-primary);
+  transition: color .5s;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.workouts {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.workout-info-container h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.workout-info-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.workout-info-container h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 10px;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .map-container {
+    width: 80%;
+    height: 300px;
+  }
+
+  .workouts {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

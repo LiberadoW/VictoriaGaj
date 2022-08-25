@@ -1,0 +1,27 @@
+.back-to-top-button {
+  position: fixed;
+
+  left: 80%;
+  bottom: 40px;
+}
+
+.back-to-top-button button {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border: 0;
+}
+
+.progress-value {
+  background-color: var(--article-background);
+  color: var(--text-primary);
+  display: grid;
+  place-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}

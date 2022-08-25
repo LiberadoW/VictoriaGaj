@@ -1,0 +1,134 @@
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.articles-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.article-list-item {
+  list-style: none;
+  margin: 10px;
+  width: 100%;
+}
+
+.article-pagination-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 750px  ;
+}
+
+.article {
+  background-color: var(--article-background);
+  display: flex;
+  flex-direction: row;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.5s;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.article h3 {
+  font-size: 16px;
+  color: var(--text-primary);
+  transition: color 0.5s; 
+}
+
+.article p {
+  color: var(--text-secondary);
+  transition: color 0.5s;
+}
+
+.featured-article {
+  list-style: none;
+  width: 100%;
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  margin: 0 auto;
+}
+
+.featured-article img {
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+  grid-area: overlap;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+.featured-article-title {
+  grid-area: overlap;
+  color: var(--white-text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.featured-article h3 {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #034694;
+  text-align: center;
+  width: fit-content;
+  
+}
+
+.featured-article div.article-text p {
+  display: none;
+}
+.article-photo {
+  display: flex;
+  width: 250px;
+}
+
+.article-photo img {
+  width: 100%;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+}
+
+.article-date {
+  margin-bottom: auto;
+}
+
+.article-text div {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-bottom: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .article {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .article-photo {
+    width: 100%;
+  }
+}

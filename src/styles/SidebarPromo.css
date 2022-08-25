@@ -1,0 +1,44 @@
+.sidebar-promo {
+  width: 250px;
+  margin: 0 auto;
+  background-color: var(--article-background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  border-radius: 13px 13px 0 0;
+}
+
+.sidebar-promo-title {
+  background-color: #033978;
+  height: 28px;
+  color: var(--white-text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px 13px 0 0;
+}
+
+.sidebar-promo-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-promo ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.sidebar-promo-text h3 {
+  text-align: center;
+}
+
+.sidebar-promo-text p {
+    text-align: center;
+  }
+  

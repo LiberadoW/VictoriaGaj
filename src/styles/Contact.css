@@ -1,0 +1,47 @@
+.contact-box-container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    transition: color 0.5s;
+}
+
+.welcome-message h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info-wrapper h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info-wrapper {
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: var(--article-background);
+    color: var(--text-primary);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.6);
+    display: flex;
+    height: 200px;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .5s;
+ 
+}

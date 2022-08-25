@@ -1,0 +1,25 @@
+.next-match {
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 13px 13px 0 0;
+  font-size: 0.9rem;
+}
+
+.next-match-title {
+  background-color: #033978;
+  padding: 6px;
+  color: var(--white-text-primary);
+  text-align: center;
+  transition: color 0.5s;
+  border-radius: 13px 13px 0 0;
+  font-weight: bold;
+}
+
+.next-match-league {
+  background-color: #034694;
+  padding: 6px;
+  color: var(--white-text-primary);
+  text-align: center;
+  transition: color 0.5s;
+  font-weight: bold;
+}

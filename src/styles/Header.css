@@ -1,0 +1,14 @@
+header {
+  display: flex;
+}
+
+header div {
+  max-height: 100%;
+}
+
+.main-image {
+  display: block;
+  max-height: 250px;
+  width: 100%;
+}
+
