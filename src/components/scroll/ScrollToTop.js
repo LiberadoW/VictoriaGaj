@@ -28,7 +28,7 @@ const ScrollToTop = () => {
       className={isVisible ? "scroll-button active" : "scroll button"}
       onClick={scrollToTop}
     >
-      <i class="fa-solid fa-angles-up"></i>
+      <i className="fa-solid fa-angles-up"></i>
     </div>
   );
 };

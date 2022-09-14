@@ -4,9 +4,9 @@ import "../styles/BigArticle.css";
 import ReactMarkdown from "react-markdown";
 import Slider from "./Slider";
 
-const Article = (props) => {
+const Article = ({id}) => {
   const location = useLocation();
-  const article = location.state.find((o) => o.id == props.id);
+  const article = location.state.find((o) => o.id == id);
 
   return (
     <>

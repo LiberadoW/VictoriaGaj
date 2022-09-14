@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ContactCard = (props) => {
+const ContactCard = ({iconClass,cardTitle,text}) => {
     return ( 
         <div className="contact-card">
-            <i className={props.iconClass}></i>
-            <h2>{props.cardTitle}</h2>
-            <p>{props.text}</p>
+            <i className={iconClass}></i>
+            <h2>{cardTitle}</h2>
+            <p>{text}</p>
         </div>
      );
 }

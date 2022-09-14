@@ -3,9 +3,9 @@ import "../styles/SidebarPromo.css"
 const SidebarPromo = () => {
     return ( 
         <div className="sidebar-promo">
-        <p className="sidebar-promo-title">
+        <div className="sidebar-promo-title">
         <h3>Dołącz do nas już dziś!</h3>
-        </p>
+        </div>
         <div className="sidebar-promo-text">
             <h3>UKS Victoria Gaj</h3>
             <p>Zaprasza wszystkie dziewczyny na niezwykłą przygodę z piłką nożną!</p>

@@ -5,15 +5,17 @@ import Pagination from "./Pagination";
 import GalleryPage from "./GalleryPage";
 import "../styles/Gallery.css";
 
-const Gallery = (props) => {
+const postsPerPage = 20
+
+const Gallery = () => {
   const params = useParams();
   const location = useLocation();
+
 
   const gallery = location.state.find((o) => o.id == params.id);
   const photoList = gallery.attributes.Photos.data;
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(20);
   const [pageNumberLimit, setPageNumberLimit] = useState(5);
   const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
   const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(5);

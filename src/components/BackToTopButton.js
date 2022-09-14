@@ -39,7 +39,7 @@ const BackToTopButton = () => {
       {backToTopButton && (
         <button onClick={scrollUp} id="progress">
           <div className="progress-value" id="scroll-value">
-            <i class="fa-solid fa-arrow-up"></i>
+            <i className="fa-solid fa-arrow-up"></i>
           </div>
         </button>
       )}

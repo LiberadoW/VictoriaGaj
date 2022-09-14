@@ -8,9 +8,7 @@ import SocialMedia from "../components/SocialMedia";
 import SidebarPromo from "../components/SidebarPromo";
 import Articles from "../components/Articles";
 
-const HomePage = (props) => {
-  const articles = props.articles;
-
+const HomePage = ({articles,scores}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(5);
   const [pageNumberLimit, setPageNumberLimit] = useState(5);
@@ -31,7 +29,7 @@ const HomePage = (props) => {
     setCurrentPage(pageNumber);
   };
 
-  if (props.scores.length === 0) {
+  if (scores.length === 0) {
     return null;
   } else {
     return (
@@ -78,7 +76,7 @@ const HomePage = (props) => {
 
           <aside>
             <SidebarPromo />
-            <Table scores={props.scores} />
+            <Table scores={scores} />
             <SocialMedia />
           </aside>
         </section>

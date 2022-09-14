@@ -1,16 +1,16 @@
 import React from "react";
 
-const Coach = (props) => {
+const Coach = ({photo,name,role,mobile,mail}) => {
   return (
     <div className="coach-card">
       <div className="coach-image-container">
-        <img src={props.photo} alt="Coach" />
+        <img src={photo} alt="Coach" />
       </div>
       <div className="coach-text-container">
-      <p className="bold-text">{props.name}</p>
-      <p>{props.role}</p>
-      <p>Telefon: {props.mobile}</p>
-      <p>E-mail: {props.mail}</p>
+      <p className="bold-text">{name}</p>
+      <p>{role}</p>
+      <p>Telefon: {mobile}</p>
+      <p>E-mail: {mail}</p>
       </div>
     </div>
   );

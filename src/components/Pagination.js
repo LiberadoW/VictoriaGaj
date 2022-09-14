@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Pagination.css";
 
 const Pagination = ({
- 
   postsPerPage,
   totalPosts,
   paginate,
@@ -13,7 +12,6 @@ const Pagination = ({
   setMinPageNumberLimit,
   setMaxPageNumberLimit,
   pageNumberLimit,
-  
 }) => {
   const pageNumbers = [];
 
@@ -24,7 +22,6 @@ const Pagination = ({
   const header = document.querySelector(".main-image");
   const height = header.offsetHeight;
 
-  
   const renderPageNumbers = pageNumbers.map((number) => {
     if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
       return (

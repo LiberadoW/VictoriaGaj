@@ -47,11 +47,11 @@ const Modal = ({
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  // the required distance between touchStart and touchEnd to be detected as a swipe
+
   const minSwipeDistance = 50;
 
   const onTouchStart = (e) => {
-    setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
+    setTouchEnd(null); 
     setTouchStart(e.targetTouches[0].clientX);
   };
 
@@ -63,7 +63,7 @@ const Modal = ({
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe || isRightSwipe) {
-      isLeftSwipe ? handleLeftClick() : handleRightClick();
+      isLeftSwipe ? handleRightClick() : handleLeftClick();
     }
     // add your conditional logic here
   };
@@ -83,7 +83,7 @@ const Modal = ({
                     : "visible",
               }}
             >
-              <i class="fa-solid fa-arrow-left"></i>
+              <i className="fa-solid fa-arrow-left"></i>
             </div>
             <div className="image-wrapper">
               <div className="photo-number-container">{`${
@@ -102,7 +102,7 @@ const Modal = ({
                     : "visible",
               }}
             >
-              <i class="fa-solid fa-arrow-right"></i>
+              <i className="fa-solid fa-arrow-right"></i>
             </div>
           </div>
           <span className="dismiss" onClick={handleClick}>
@@ -141,7 +141,7 @@ const Modal = ({
                       : "visible",
                 }}
               >
-                <i class="fa-solid fa-arrow-left"></i>
+                <i className="fa-solid fa-arrow-left"></i>
               </div>
               <div
                 className="overlay-arrow-right"
@@ -154,7 +154,7 @@ const Modal = ({
                       : "visible",
                 }}
               >
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>

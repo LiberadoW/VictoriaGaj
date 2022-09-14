@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Table.css";
 
-const Table = (props) => {
-  const slicedArr = props.scores.result.slice(1);
+const Table = ({scores}) => {
+  const slicedArr = scores.result.slice(1);
   const newArr = [];
   slicedArr.forEach((element) => {
     const parts = element[element.length - 1].split("-", 2);
@@ -29,10 +29,11 @@ const Table = (props) => {
           </tr>
         </thead>
         <tbody>
-          {newArr.map((item) => (
-            <tr>
-              {item[0].map((value) => (
-                <td>{value}</td>
+          {newArr.map((item,index) => (
+            
+            <tr key={index}>
+              {item[0].map((value,index) => (
+                <td key={index}>{value}</td>
               ))}
             </tr>
           ))}

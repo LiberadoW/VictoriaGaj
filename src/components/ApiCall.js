@@ -31,7 +31,7 @@ const ApiCall = () => {
       .then(parseJSON)
       .then(({ data }) => setArticles(data))
       .catch((error) => setError(error));
-  }, [] );
+  },[]);
 
   const [players, setPlayers] = useState([]);
   useEffect(() => {
@@ -45,7 +45,7 @@ const ApiCall = () => {
         setPlayers(data);
       })
       .catch((error) => setError(error));
-  }, []);
+  },[]);
 
   const [gallery, setGallery] = useState([]);
   useEffect(() => {
@@ -59,7 +59,7 @@ const ApiCall = () => {
         setGallery(data);
       })
       .catch((error) => setError(error));
-  }, []);
+  },[]);
 
   const [scores, setScores] = useState([]);
   useEffect(() => {
@@ -72,10 +72,9 @@ const ApiCall = () => {
         setScores(data);
       })
       .catch((error) => setError(error));
-  }, []);
+  },[]);
 
   if (error) {
-    // Print errors if any
     return <div>An error occured: {error.message}</div>;
   }
 

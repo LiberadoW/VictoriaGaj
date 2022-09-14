@@ -5,8 +5,7 @@ import Player from "../components/Player";
 const getAge = (birthDate) =>
   Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10);
 
-const Players = (props) => {
-  const players = props.players;
+const Players = ({players}) => {
 
   const sortedPlayers = sortPlayers(players);
 
@@ -14,9 +13,9 @@ const Players = (props) => {
     <div>
       <h1>KADRA ZESPOŁU SEZON 2021-2022</h1>
 
-      {sortedPlayers.map((role) => {
+      {sortedPlayers.map((role,index) => {
         return (
-          <div className="players-container">
+          <div className="players-container" key={index}>
             <div className="players-role"><h3>{role.name}</h3></div>
             <div className="players">
               {role.value.map((item) => {

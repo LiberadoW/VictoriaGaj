@@ -2,14 +2,14 @@ import React from "react";
 import "../styles/Thumbnails.css";
 import { Link } from "react-router-dom";
 
-const Thumbnails = (props) => {
+const Thumbnails = ({gallery}) => {
   return (
     <div className="thumbnail-list-container">
       <ul>
-        {props.gallery.map((item) => {
+        {gallery.map((item) => {
           return (
             <li key={item.id}>
-              <Link to={`gallery/${item.id}`} state={props.gallery}>
+              <Link to={`gallery/${item.id}`} state={gallery}>
                 <div className="thumbnail">
                   <div className="thumbnail-photo">
                     <img

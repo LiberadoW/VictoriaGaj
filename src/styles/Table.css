@@ -21,6 +21,7 @@
 }
 
 .score-table table {
+    height: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
     width: 250px;
