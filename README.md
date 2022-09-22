@@ -1,4 +1,4 @@
-# [Live preview](https://victoriagaj.herokuapp.com/)
+# [Live preview](http://www.victoria.mogilany.pl/)
 
 ## Overview
 
