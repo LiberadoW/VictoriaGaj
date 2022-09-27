@@ -1,4 +1,4 @@
-# [Live preview](https://victoriagaj.netlify.app/)
+# [Live preview](http://www.victoria.mogilany.pl/)
 
 ## Overview
 
